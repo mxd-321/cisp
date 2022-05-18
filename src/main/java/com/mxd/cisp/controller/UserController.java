@@ -38,7 +38,7 @@ public class UserController {
       if (userService.isUsernameExist(user.getUsername())) {
         return new ReturnJson(2, "用户已存在!", 0, "");
       }
-      user.setAvatar("http://neteasemxd.top/images/nan.jpg");
+      user.setAvatar("https://neteasemxd.top/images/nan.jpg");
       userService.register(user);
       return new ReturnJson(0, "注册成功", 0, "");
     } catch (Exception e) {
